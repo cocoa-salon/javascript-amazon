@@ -1,16 +1,16 @@
-var createError = require('http-errors');
+const createError = require('http-errors');
 
-var express = require('express');
-var path = require('path');
+const express = require('express');
+const path = require('path');
 
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
 // 라우팅을 처리하는 js파일을 로드한다.  
 const indexRouter = require('./routes/index');
 const keywordsRouter = require('./routes/request_auto_keywords');
 
-var app = express();
+const app = express();
 // express의 인스턴스 
 
 // view engine setup
@@ -43,7 +43,7 @@ app.use('/index', indexRouter);
 // 요청이 발생했을 때 indexRouter.js에서 설정한 미들웨어 함수를 로드한다. 
 
 app.use('/request-auto-keywords', keywordsRouter)
-// fetch 요청을 감지해서 미들웨어 함수를 실행한다.(요청 url이 /search-auto-keywords로 시작할 때)
+// fetch 요청을 감지해서 미들웨어 함수를 실행한다.(요청 url이 /request-auto-keywords로 시작할 때)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

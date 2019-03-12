@@ -253,6 +253,3 @@ class KeywordsAutoCompleteModule {
 }
 
 const keywordsAutoCompleteModule = new KeywordsAutoCompleteModule(SETTING_VALUES);
-
-// 이렇게 하면 되는 건가?
-// export { keywordsAutoCompleteModule };
