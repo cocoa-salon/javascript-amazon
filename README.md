@@ -20,7 +20,7 @@
 
 ### Auto complete(자동 추천 검색어 완성)
 
-- npm express를 통한 백엔드 API 구성하여 추천 검색어 fetch 요청(asyn, await)
+- npm express를 통한 백엔드 API 구성하여 추천 검색어 fetch 요청(async, await)
 - 디바운스 개념 적용, 잦은 추천 검색어 요청 방지
 - 대소문자 구분 없이 자동검색 키워드 하이라이트 표시
 - 화살표 키로 상하 이동시 무한 순환
